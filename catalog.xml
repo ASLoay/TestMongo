@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/ServiceMongoDB/ServiceMangoDBService?wsdl" uri="src/conf/xml-resources/web-service-references/ServiceMangoDBService/wsdl/localhost_8080/ServiceMongoDB/ServiceMangoDBService.wsdl"/>
+    <system systemId="http://localhost:8080/ServiceMongoDB/ServiceMangoDBService?xsd=1" uri="src/conf/xml-resources/web-service-references/ServiceMangoDBService/wsdl/localhost_8080/ServiceMongoDB/ServiceMangoDBService.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/ServiceMongoDB/ServiceMongoDBService?wsdl" uri="src/conf/xml-resources/web-service-references/ServiceMongoDBService/wsdl/localhost_8080/ServiceMongoDB/ServiceMongoDBService.wsdl"/>
+    <system systemId="http://localhost:8080/ServiceMongoDB/ServiceMongoDBService?xsd=1" uri="src/conf/xml-resources/web-service-references/ServiceMongoDBService/wsdl/localhost_8080/ServiceMongoDB/ServiceMongoDBService.xsd_1.xsd"/>
+</catalog>
+
+

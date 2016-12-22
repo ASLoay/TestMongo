@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.1.3.3-hudson-757-SNAPSHOT. --><xs:schema xmlns:tns="http://laas.breathe.fr/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://laas.breathe.fr/">
+
+<xs:element name="createCollection" type="tns:createCollection"></xs:element>
+
+<xs:element name="createCollectionResponse" type="tns:createCollectionResponse"></xs:element>
+
+<xs:element name="createDB" type="tns:createDB"></xs:element>
+
+<xs:element name="createDBResponse" type="tns:createDBResponse"></xs:element>
+
+<xs:element name="deleteAllDocuments" type="tns:deleteAllDocuments"></xs:element>
+
+<xs:element name="deleteAllDocumentsResponse" type="tns:deleteAllDocumentsResponse"></xs:element>
+
+<xs:element name="deleteCollection" type="tns:deleteCollection"></xs:element>
+
+<xs:element name="deleteCollectionResponse" type="tns:deleteCollectionResponse"></xs:element>
+
+<xs:element name="deleteDatabase" type="tns:deleteDatabase"></xs:element>
+
+<xs:element name="deleteDatabaseResponse" type="tns:deleteDatabaseResponse"></xs:element>
+
+<xs:element name="deleteDocument" type="tns:deleteDocument"></xs:element>
+
+<xs:element name="deleteDocumentResponse" type="tns:deleteDocumentResponse"></xs:element>
+
+<xs:element name="getQuery" type="tns:getQuery"></xs:element>
+
+<xs:element name="getQueryResponse" type="tns:getQueryResponse"></xs:element>
+
+<xs:element name="insertDocument" type="tns:insertDocument"></xs:element>
+
+<xs:element name="insertDocumentResponse" type="tns:insertDocumentResponse"></xs:element>
+
+<xs:complexType name="createDB">
+<xs:sequence>
+<xs:element name="ip" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="port" type="xs:int"></xs:element>
+<xs:element name="dbName" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createDBResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createCollection">
+<xs:sequence>
+<xs:element name="ip" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="port" type="xs:int"></xs:element>
+<xs:element name="dbName" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="nameCollection" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createCollectionResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getQuery">
+<xs:sequence>
+<xs:element name="ip" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="port" type="xs:int"></xs:element>
+<xs:element name="dbName" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="collectionName" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="query" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getQueryResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteCollection">
+<xs:sequence>
+<xs:element name="ip" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="port" type="xs:int"></xs:element>
+<xs:element name="nameDB" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="nameCollection" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteCollectionResponse">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteDocument">
+<xs:sequence>
+<xs:element name="ip" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="port" type="xs:int"></xs:element>
+<xs:element name="nameDB" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="nameCollection" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="query" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteDocumentResponse">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteAllDocuments">
+<xs:sequence>
+<xs:element name="ip" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="port" type="xs:int"></xs:element>
+<xs:element name="nameDB" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="nameCollection" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteAllDocumentsResponse">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteDatabase">
+<xs:sequence>
+<xs:element name="ip" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="port" type="xs:int"></xs:element>
+<xs:element name="nameDB" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteDatabaseResponse">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="insertDocument">
+<xs:sequence>
+<xs:element name="ip" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="port" type="xs:int"></xs:element>
+<xs:element name="nameDB" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="nameCollection" type="xs:string" minOccurs="0"></xs:element>
+<xs:element name="document" type="xs:string" minOccurs="0"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="insertDocumentResponse">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+</xs:schema>
