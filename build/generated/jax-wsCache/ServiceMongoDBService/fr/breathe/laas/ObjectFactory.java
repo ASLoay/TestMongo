@@ -49,59 +49,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link DeleteDatabaseResponse }
+     * Create an instance of {@link DeleteAllDocumentsResponse }
      * 
      */
-    public DeleteDatabaseResponse createDeleteDatabaseResponse() {
-        return new DeleteDatabaseResponse();
-    }
-
-    /**
-     * Create an instance of {@link GetQuery }
-     * 
-     */
-    public GetQuery createGetQuery() {
-        return new GetQuery();
-    }
-
-    /**
-     * Create an instance of {@link InsertDocumentResponse }
-     * 
-     */
-    public InsertDocumentResponse createInsertDocumentResponse() {
-        return new InsertDocumentResponse();
-    }
-
-    /**
-     * Create an instance of {@link DeleteDatabase }
-     * 
-     */
-    public DeleteDatabase createDeleteDatabase() {
-        return new DeleteDatabase();
-    }
-
-    /**
-     * Create an instance of {@link DeleteCollectionResponse }
-     * 
-     */
-    public DeleteCollectionResponse createDeleteCollectionResponse() {
-        return new DeleteCollectionResponse();
-    }
-
-    /**
-     * Create an instance of {@link GetQueryResponse }
-     * 
-     */
-    public GetQueryResponse createGetQueryResponse() {
-        return new GetQueryResponse();
-    }
-
-    /**
-     * Create an instance of {@link CreateCollectionResponse }
-     * 
-     */
-    public CreateCollectionResponse createCreateCollectionResponse() {
-        return new CreateCollectionResponse();
+    public DeleteAllDocumentsResponse createDeleteAllDocumentsResponse() {
+        return new DeleteAllDocumentsResponse();
     }
 
     /**
@@ -110,38 +62,6 @@ public class ObjectFactory {
      */
     public InsertDocument createInsertDocument() {
         return new InsertDocument();
-    }
-
-    /**
-     * Create an instance of {@link CreateCollection }
-     * 
-     */
-    public CreateCollection createCreateCollection() {
-        return new CreateCollection();
-    }
-
-    /**
-     * Create an instance of {@link CreateDB }
-     * 
-     */
-    public CreateDB createCreateDB() {
-        return new CreateDB();
-    }
-
-    /**
-     * Create an instance of {@link DeleteDocumentResponse }
-     * 
-     */
-    public DeleteDocumentResponse createDeleteDocumentResponse() {
-        return new DeleteDocumentResponse();
-    }
-
-    /**
-     * Create an instance of {@link DeleteDocument }
-     * 
-     */
-    public DeleteDocument createDeleteDocument() {
-        return new DeleteDocument();
     }
 
     /**
@@ -161,11 +81,75 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link DeleteAllDocumentsResponse }
+     * Create an instance of {@link GetQuery }
      * 
      */
-    public DeleteAllDocumentsResponse createDeleteAllDocumentsResponse() {
-        return new DeleteAllDocumentsResponse();
+    public GetQuery createGetQuery() {
+        return new GetQuery();
+    }
+
+    /**
+     * Create an instance of {@link DeleteDocument }
+     * 
+     */
+    public DeleteDocument createDeleteDocument() {
+        return new DeleteDocument();
+    }
+
+    /**
+     * Create an instance of {@link DeleteDatabaseResponse }
+     * 
+     */
+    public DeleteDatabaseResponse createDeleteDatabaseResponse() {
+        return new DeleteDatabaseResponse();
+    }
+
+    /**
+     * Create an instance of {@link CreateCollection }
+     * 
+     */
+    public CreateCollection createCreateCollection() {
+        return new CreateCollection();
+    }
+
+    /**
+     * Create an instance of {@link DeleteDatabase }
+     * 
+     */
+    public DeleteDatabase createDeleteDatabase() {
+        return new DeleteDatabase();
+    }
+
+    /**
+     * Create an instance of {@link CreateDB }
+     * 
+     */
+    public CreateDB createCreateDB() {
+        return new CreateDB();
+    }
+
+    /**
+     * Create an instance of {@link CreateCollectionResponse }
+     * 
+     */
+    public CreateCollectionResponse createCreateCollectionResponse() {
+        return new CreateCollectionResponse();
+    }
+
+    /**
+     * Create an instance of {@link DeleteCollectionResponse }
+     * 
+     */
+    public DeleteCollectionResponse createDeleteCollectionResponse() {
+        return new DeleteCollectionResponse();
+    }
+
+    /**
+     * Create an instance of {@link InsertDocumentResponse }
+     * 
+     */
+    public InsertDocumentResponse createInsertDocumentResponse() {
+        return new InsertDocumentResponse();
     }
 
     /**
@@ -174,6 +158,22 @@ public class ObjectFactory {
      */
     public CreateDBResponse createCreateDBResponse() {
         return new CreateDBResponse();
+    }
+
+    /**
+     * Create an instance of {@link DeleteDocumentResponse }
+     * 
+     */
+    public DeleteDocumentResponse createDeleteDocumentResponse() {
+        return new DeleteDocumentResponse();
+    }
+
+    /**
+     * Create an instance of {@link GetQueryResponse }
+     * 
+     */
+    public GetQueryResponse createGetQueryResponse() {
+        return new GetQueryResponse();
     }
 
     /**
